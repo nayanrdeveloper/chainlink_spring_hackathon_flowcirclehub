@@ -1,3 +1,4 @@
+import { type } from "os";
 import { IconType } from "react-icons";
 
 export type NavItem = {
@@ -15,4 +16,24 @@ export type Indicator = {
 export type ProfileActiveType = {
   image: string;
   isActive: boolean;
+};
+
+export type NavItemType = {
+  id: number;
+  title: string;
+  icon: IconType;
+  route: string;
+};
+
+export type SidebarProfileType = {
+  image: string;
+  name: string;
+  userId: string;
+};
+
+export type WritePostIconType = {
+  image: string;
+  text: string;
+  alt: string;
+  onClick: () => void;
 };

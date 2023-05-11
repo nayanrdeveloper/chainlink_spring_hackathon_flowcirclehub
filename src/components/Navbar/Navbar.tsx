@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { NavItem } from "../../../types";
+import { NavItem } from "../../types";
 import { BsSearch } from "react-icons/bs";
 import { BiHome, BiUser } from "react-icons/bi";
 import { HiOutlineDocumentText, HiOutlineMail } from "react-icons/hi";
