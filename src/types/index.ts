@@ -37,3 +37,18 @@ export type WritePostIconType = {
   alt: string;
   onClick: () => void;
 };
+
+export type PostType = {
+  id: number;
+  userImage: string;
+  userName: string;
+  userStatus: boolean;
+  postDesc: string;
+  postImage: string;
+};
+
+export type ContactType = {
+  id: number;
+  image: string;
+  name: string;
+};
