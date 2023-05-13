@@ -52,3 +52,43 @@ export type ContactType = {
   image: string;
   name: string;
 };
+
+type FriendImageType = {
+  image: string;
+  id: number;
+  name: string;
+};
+
+export type FriendType = {
+  id: number;
+  image: string;
+  name: string;
+  mutualFriendCount: number;
+  mutualFriendImageList: FriendImageType[];
+  confirmAction?: () => void;
+  deleteAction?: () => void;
+};
+
+export type EventCardType = {
+  id: number;
+  name: string;
+  image: string;
+  location: string;
+  date: string;
+  interested: boolean;
+};
+
+export type EventType = {
+  id: number;
+  name: string;
+  image: string;
+  date: string;
+  attendingCount: number;
+  eventDay: number;
+  organizer: string;
+  interested: boolean;
+  dateTime: string;
+  desc: string;
+  eventType: string;
+  location: string;
+};
